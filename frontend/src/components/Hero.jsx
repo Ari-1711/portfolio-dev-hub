@@ -6,10 +6,10 @@ import profileImg from '../assets/profile.jpg';
 export default function Hero() {
   const socialLinks = [
     { name: 'GitHub', icon: GithubIcon, url: 'https://github.com/Ari-1711', label: 'github.com/Ari-1711' },
-    { name: 'LinkedIn', icon: LinkedinIcon, url: 'https://linkedin.com/in/ari', label: 'LinkedIn Profile' },
-    { name: 'WhatsApp Direct', icon: WhatsappIcon, url: 'https://wa.me/6281234567890', label: '+62 812-3456-7890' },
-    { name: 'Email', icon: Mail, url: 'mailto:ari.developer@email.com', label: 'ari.developer@email.com' },
-    { name: 'Instagram', icon: InstagramIcon, url: 'https://instagram.com/ari', label: '@ari.dev' },
+    { name: 'LinkedIn', icon: LinkedinIcon, url: 'https://www.linkedin.com/in/ari-hermawan-783370315/', label: 'Ari Hermawan' },
+    { name: 'WhatsApp Direct', icon: WhatsappIcon, url: 'https://wa.me/6281221634924', label: '+62 812-2163-4924' },
+    { name: 'Email', icon: Mail, url: 'mailto:arihermawan006@gmail.com', label: 'arihermawan006@gmail.com' },
+    { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/arihermawan_431/', label: '@arihermawan_431' },
   ];
 
   const scrollToSection = (id) => {
@@ -30,7 +30,7 @@ export default function Hero() {
             {/* Status Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--color-accent)]/30 bg-[var(--color-badge-bg)] text-[var(--color-badge-text)] text-xs font-mono font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Available for Hire &amp; AI Projects</span>
+              <span>Available for Hire</span>
             </div>
 
             {/* Main Headline */}
@@ -100,7 +100,7 @@ export default function Hero() {
                     <User size={18} className="text-[var(--color-accent)]" />
                     <span className="font-sans text-xs font-bold text-[var(--color-text-primary)]">Ari Hermawan</span>
                   </div>
-                  <span className="font-sans text-xs text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2.5 py-0.5 rounded-full font-medium">Software Engineer</span>
+                 
                 </div>
 
                 {/* Avatar Placeholder / Photo Frame */}

@@ -53,20 +53,20 @@ export default function Contact() {
   const directContacts = [
     {
       name: 'WhatsApp Direct',
-      value: '+62 812-3456-7890',
-      url: 'https://wa.me/6281234567890',
+      value: '+62 812-2163-4924',
+      url: 'https://wa.me/6281221634924',
       icon: WhatsappIcon,
     },
     {
       name: 'Email Direct',
-      value: 'ari.developer@email.com',
-      url: 'mailto:ari.developer@email.com',
+      value: 'arihermawan006@gmail.com',
+      url: 'mailto:arihermawan006@gmail.com',
       icon: Mail,
     },
     {
       name: 'LinkedIn Profile',
-      value: 'linkedin.com/in/ari',
-      url: 'https://linkedin.com/in/ari',
+      value: 'Ari Hermawan',
+      url: 'https://www.linkedin.com/in/ari-hermawan-783370315/',
       icon: LinkedinIcon,
     },
     {
@@ -77,8 +77,8 @@ export default function Contact() {
     },
     {
       name: 'Instagram',
-      value: '@ari.dev',
-      url: 'https://instagram.com/ari',
+      value: '@arihermawan_431',
+      url: 'https://www.instagram.com/arihermawan_431/',
       icon: InstagramIcon,
     },
   ];
