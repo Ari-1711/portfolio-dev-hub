@@ -34,7 +34,7 @@ export default function Portfolio() {
       category: 'Fullstack Web Application',
       description: 'Portofolio interaktif berbasis React.js (Vite) dan Tailwind CSS berarsitektur Clean Soft Minimalist. Dilengkapi backend Express.js untuk menyajikan data portofolio dan menangani pesan masuk.',
       tags: ['React.js', 'Node.js', 'Express', 'Tailwind CSS', 'Vercel'],
-      demoUrl: '#',
+      demoUrl: 'https://portfolio-ari-navy.vercel.app/',
       githubUrl: 'https://github.com/Ari-1711/portfolio-dev-hub',
     },
   ];
