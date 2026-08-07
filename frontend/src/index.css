@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-base: #C4E2F5;        /* Soft Ice Blue Base */
+    --color-surface-card: #FFFFFF;    /* Pure White Card Background */
+    --color-surface-border: #4BB8FA;  /* Secondary Accent / Border Light */
+    --color-text-primary: #2C5EAD;    /* Primary Text / Header Light */
+    --color-text-secondary: #1F4580;  /* Deep Muted Blue Text */
+    --color-accent: #1591DC;          /* Primary Accent / CTA */
+    --color-badge-bg: #4BB8FA;        /* Secondary Accent / Badges Light */
+    --color-badge-text: #FFFFFF;      /* Badge Text Light */
+  }
+
+  .dark {
+    --color-bg-base: #27374D;        /* Deep Slate Charcoal Base */
+    --color-surface-card: #526D82;    /* Card Background Dark */
+    --color-surface-border: #9DB2BF;  /* Secondary Accent / Borders Dark */
+    --color-text-primary: #DDE6ED;    /* Primary Text & Highlights Dark */
+    --color-text-secondary: #9DB2BF;  /* Secondary Text & Subtitles Dark */
+    --color-accent: #1591DC;          /* Primary Accent CTA */
+    --color-badge-bg: rgba(157, 178, 191, 0.25); /* Translucent Slate */
+    --color-badge-text: #DDE6ED;      /* Badge Text Dark */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg-base);
+    color: var(--color-text-primary);
+    font-family: 'Inter', 'Plus Jakarta Sans', sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
