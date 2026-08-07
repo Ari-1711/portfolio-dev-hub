@@ -50,7 +50,7 @@ export default function Navbar() {
               onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}
               className="text-lg font-bold font-sans tracking-wide text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors"
             >
-              ARI HERMAWAN
+              ARI HERMAWAN 
             </a>
           </div>
 
