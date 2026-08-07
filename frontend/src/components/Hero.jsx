@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, ArrowUpRight, User } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon, WhatsappIcon } from './Icons';
+import profileImg from '../assets/profile.jpg';
 
 export default function Hero() {
   const socialLinks = [
@@ -104,13 +105,8 @@ export default function Hero() {
 
                 {/* Avatar Placeholder / Photo Frame */}
                 <div className="relative group">
-                  <div className="w-44 h-44 sm:w-52 sm:h-52 mx-auto rounded-xl border-2 border-[var(--color-accent)] bg-[var(--color-bg-base)] flex flex-col items-center justify-center p-4 text-center overflow-hidden transition-all duration-300">
-                    {/* Minimalist Graphic Avatar Placeholder */}
-                    <div className="w-20 h-20 rounded-full bg-[var(--color-accent)]/20 border border-[var(--color-accent)] flex items-center justify-center mb-3">
-                      <User size={36} className="text-[var(--color-accent)]" />
-                    </div>
-                    <span className="font-bold text-base text-[var(--color-text-primary)]">Ari Hermawan</span>
-                    <span className="text-xs text-[var(--color-text-secondary)] font-sans">Fullstack &amp; AI Developer</span>
+                  <div className="w-44 h-44 sm:w-52 sm:h-52 mx-auto rounded-full border-4 border-[var(--color-accent)] bg-[var(--color-bg-base)] flex items-center justify-center overflow-hidden transition-all duration-300 shadow-lg shadow-[var(--color-accent)]/20">
+                    <img src={profileImg} alt="Ari Hermawan" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   </div>
                 </div>
 

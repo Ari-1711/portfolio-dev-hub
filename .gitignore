@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.local
+.venv/
+dist/
+build/
+
+# Exception for agents and graphify
+!.agents/
+!graphify-out/
