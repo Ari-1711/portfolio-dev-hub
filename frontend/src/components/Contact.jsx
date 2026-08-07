@@ -103,7 +103,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
           {/* Interactive Contact Form */}
-          <div className="lg:col-span-7 p-6 sm:p-8 rounded-2xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)]">
+          <div className="lg:col-span-7 p-6 sm:p-8 rounded-3xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] hover:border-[var(--color-accent)] transition-all duration-300 shadow-sm">
             <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-6 flex items-center gap-2">
               <Mail className="text-[var(--color-accent)]" size={20} />
               <span>Kirim Pesan Langsung</span>
@@ -209,7 +209,7 @@ export default function Contact() {
 
           {/* Right Column: Direct Social Connect Hub */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-6 sm:p-8 rounded-2xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] space-y-6">
+            <div className="p-6 sm:p-8 rounded-3xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] space-y-6 hover:border-[var(--color-accent)] transition-all duration-300 shadow-sm">
               <div>
                 <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-2">
                   Social &amp; Direct Connect

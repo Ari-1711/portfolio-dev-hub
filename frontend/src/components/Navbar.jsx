@@ -94,14 +94,14 @@ export default function Navbar() {
           <div className="flex md:hidden items-center space-x-2">
             <button
               onClick={toggleDarkMode}
-              className="p-2 rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)]"
+              className="touch-target p-2 rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:bg-[var(--color-surface-border)]/50 transition-colors"
             >
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
             </button>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)]"
+              className="touch-target p-2 rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:bg-[var(--color-surface-border)]/50 transition-colors"
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -111,7 +111,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-[var(--color-surface-border)] bg-[var(--color-bg-base)] px-4 pt-2 pb-4 space-y-2">
+        <div className="md:hidden glass-drawer px-4 pt-2 pb-4 space-y-2 animate-in slide-in-from-top-4 fade-in duration-200">
           {navItems.map((item) => (
             <button
               key={item.id}

@@ -37,16 +37,6 @@ export default function Portfolio() {
       demoUrl: '#',
       githubUrl: 'https://github.com/Ari-1711/portfolio-dev-hub',
     },
-    {
-      id: 'rest-api-service',
-      featured: false,
-      title: 'Centralized RESTful API Service',
-      category: 'Backend Architecture',
-      description: 'Service API tersentralisasi dengan Express.js yang menangani validasi input, *middleware error handling* terpusat, dan struktur respons standar JSON `{ success, data, message }`.',
-      tags: ['Node.js', 'Express.js', 'REST API', 'JSON Protocol'],
-      demoUrl: '#',
-      githubUrl: 'https://github.com/Ari-1711/portfolio-dev-hub',
-    },
   ];
 
   return (
@@ -61,16 +51,13 @@ export default function Portfolio() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[var(--color-text-primary)]">
             Portfolio <span className="text-[var(--color-accent)]">Showcase</span>
           </h2>
-          <p className="mt-4 text-base text-[var(--color-text-secondary)] leading-relaxed">
-            Daftar proyek nyata dan proof of concept yang menunjukkan penerapan arsitektur full-stack, integrasi model AI, dan standar rekayasa perangkat lunak.
-          </p>
         </div>
 
         {/* Featured Project Showcase Card (Smart Waste Management System) */}
         {projects.filter(p => p.featured).map((project) => (
           <div 
             key={project.id}
-            className="mb-12 p-6 sm:p-8 rounded-2xl border-2 border-[var(--color-accent)] bg-[var(--color-surface-card)] shadow-lg relative overflow-hidden"
+            className="mb-12 p-6 sm:p-8 rounded-3xl border-2 border-[var(--color-accent)] bg-[var(--color-surface-card)] shadow-lg relative overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
           >
             {/* Top Badge */}
             <div className="flex flex-wrap items-center justify-between gap-4 mb-6 pb-4 border-b border-[var(--color-surface-border)]">
@@ -173,7 +160,7 @@ export default function Portfolio() {
           {projects.filter(p => !p.featured).map((project) => (
             <div 
               key={project.id}
-              className="p-6 rounded-xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] flex flex-col justify-between space-y-4 hover:border-[var(--color-accent)] transition-all"
+              className="p-6 rounded-2xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] flex flex-col justify-between space-y-4 hover:border-[var(--color-accent)] hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2">

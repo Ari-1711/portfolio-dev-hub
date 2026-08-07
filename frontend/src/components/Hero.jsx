@@ -34,8 +34,8 @@ export default function Hero() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[var(--color-text-primary)] leading-[1.1]">
-              Fullstack &amp; <span className="text-[var(--color-accent)]">AI Developer</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[var(--color-text-primary)] leading-[1.2] sm:leading-[1.1] text-pretty">
+              Hai saya Ari Hermawan <span className="text-gradient block mt-2 sm:mt-0 sm:inline">Mahasiswa TI</span>
             </h1>
 
             {/* 2-Line Bio */}
@@ -44,10 +44,10 @@ export default function Hero() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full sm:w-auto">
               <button
                 onClick={() => scrollToSection('portfolio')}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent)]/90 transition-all shadow-sm hover:translate-y-[-2px]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-xl bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent)]/90 transition-all shadow-md hover:shadow-lg hover:-translate-y-1"
               >
                 <span>View Projects</span>
                 <ArrowUpRight size={16} />
@@ -55,7 +55,7 @@ export default function Hero() {
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-xl border-2 border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all hover:-translate-y-1"
               >
                 <span>Contact Me</span>
               </button>
@@ -92,7 +92,7 @@ export default function Hero() {
             <div className="relative w-full max-w-md">
               
               {/* Outer Decorative Border Card */}
-              <div className="p-6 rounded-2xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] shadow-md space-y-6">
+              <div className="glass-panel p-6 sm:p-8 rounded-3xl space-y-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
                 
                 {/* Header Badge */}
                 <div className="flex items-center justify-between border-b border-[var(--color-surface-border)] pb-4">

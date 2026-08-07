@@ -80,7 +80,7 @@ export default function Experience() {
                 </div>
 
                 {/* Content Card */}
-                <div className="p-6 sm:p-8 rounded-xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] space-y-4 hover:border-[var(--color-accent)] transition-all">
+                <div className="p-6 sm:p-8 rounded-2xl border border-[var(--color-surface-border)] bg-[var(--color-surface-card)] space-y-4 hover:border-[var(--color-accent)] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                   
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <div>
