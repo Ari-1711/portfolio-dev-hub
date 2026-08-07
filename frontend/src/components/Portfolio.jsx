@@ -9,12 +9,23 @@ export default function Portfolio() {
       featured: true,
       title: 'Smart Waste Management System',
       category: 'AI / Fullstack Deep Learning App',
-      description: 'Sistem klasifikasi dan pemilahan sampah otomatis berbasis Vision AI. Menggunakan arsitektur CNN MobileNetV2 yang dihubungkan ke REST API Node.js/Express dan disajikan melalui Dashboard React responsif.',
+      description: 'Sistem manajemen dan klasifikasi sampah berbasis AI/Machine Learning untuk mengoptimalkan pengolahan limbah secara efisien.',
       problem: 'Proses pemilahan jenis sampah organik/anorganik secara manual membutuhkan waktu lama dan rentan kesalahan manusia.',
       solution: 'Model AI MobileNetV2 mengklasifikasikan citra sampah dengan akurasi tinggi dan mengabarkan status tampungan via API backend secara real-time.',
-      tags: ['React.js', 'Node.js', 'Express.js', 'Python', 'MobileNetV2', 'Tailwind CSS'],
-      demoUrl: '#',
-      githubUrl: 'https://github.com/Ari-1711/portfolio-dev-hub',
+      tags: ['Python', 'Streamlit', 'Machine Learning', 'Computer Vision', 'MobileNetV2'],
+      demoUrl: 'https://smartwastemanagement-bvasn5fbt3szlfmmnvvd6f.streamlit.app/',
+      githubUrl: 'https://github.com/Ari-1711/smart_waste_management',
+      demoNote: 'Catatan: Jika web demo baru dibuka, mohon muat ulang (reload) halaman karena Streamlit menggunakan mode sleep saat tidak ada aktivitas.'
+    },
+    {
+      id: 'ecommerce-forecasting',
+      featured: false,
+      title: 'E-Commerce Demand Forecasting',
+      category: 'Data Analytics & Forecasting',
+      description: 'Platform prediktif untuk menganalisis dan meramalkan permintaan stok produk e-commerce guna mengoptimalkan rantai pasok dan persediaan.',
+      tags: ['Python', 'Data Analytics', 'Time Series Forecasting', 'React / Web'],
+      demoUrl: 'https://ecommerce-demand-forecasting-git-main-ari-1711s-projects.vercel.app/',
+      githubUrl: 'https://github.com/Ari-1711/ecommerce-demand-forecasting',
     },
     {
       id: 'portfolio-dev-hub',
@@ -87,11 +98,11 @@ export default function Portfolio() {
                 {/* Problem vs Solution Split */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">
                   <div className="p-3 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[var(--color-text-primary)]">
-                    <span className="block font-bold text-amber-500 mb-1">Masalah:</span>
+                    <span className="block font-bold text-amber-600 dark:text-amber-400 mb-1">Masalah:</span>
                     <span>{project.problem}</span>
                   </div>
                   <div className="p-3 rounded-lg border border-emerald-500/30 bg-emerald-500/5 text-[var(--color-text-primary)]">
-                    <span className="block font-bold text-emerald-500 mb-1">Solusi AI:</span>
+                    <span className="block font-bold text-emerald-600 dark:text-emerald-400 mb-1">Solusi AI:</span>
                     <span>{project.solution}</span>
                   </div>
                 </div>
@@ -124,24 +135,33 @@ export default function Portfolio() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-[var(--color-surface-border)]">
-                  <a
-                    href={project.demoUrl}
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-lg bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent)]/90 transition-all text-center"
-                  >
-                    <span>Live Demo</span>
-                    <ExternalLink size={14} />
-                  </a>
+                <div className="flex flex-col gap-3 pt-4 border-t border-[var(--color-surface-border)]">
+                  {project.demoNote && (
+                    <div className="text-[11px] font-medium text-amber-600 dark:text-amber-400 bg-amber-500/10 border border-amber-500/20 p-2 rounded-md leading-relaxed text-center mb-1">
+                      {project.demoNote}
+                    </div>
+                  )}
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-lg bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent)]/90 transition-all text-center"
+                    >
+                      <span>Live Demo</span>
+                      <ExternalLink size={14} />
+                    </a>
 
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all text-center"
-                  >
-                    <GithubIcon size={14} />
-                    <span>GitHub Repo</span>
-                  </a>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold rounded-lg border border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all text-center"
+                    >
+                      <GithubIcon size={14} />
+                      <span>GitHub Repo</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -185,6 +205,17 @@ export default function Portfolio() {
                 </div>
 
                 <div className="flex items-center gap-4 pt-1 text-xs font-semibold">
+                  {project.demoUrl !== '#' && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-[var(--color-text-primary)] hover:text-[var(--color-accent)] transition-colors"
+                    >
+                      <ExternalLink size={14} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                   <a
                     href={project.githubUrl}
                     target="_blank"
