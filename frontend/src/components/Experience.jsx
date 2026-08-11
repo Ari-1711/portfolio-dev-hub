@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, Code2, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 export default function Experience() {
   const timelineItems = [
@@ -8,7 +8,7 @@ export default function Experience() {
       type: 'education',
       title: 'Teknik Informatika (S1)',
       institution: 'Universitas Mercu Buana',
-      period: '2022 - Sekarang',
+      period: '2024 - Sekarang',
       location: 'Jakarta, Indonesia',
       description: 'Studi berfokus pada Rekayasa Perangkat Lunak, Struktur Data & Algoritma, Basis Data, dan Inteligensi Buatan (AI/ML). Active developer dalam proyek sistem pemilahan sampah cerdas berbasis Vision AI.',
       highlights: [
@@ -18,36 +18,7 @@ export default function Experience() {
       ],
       icon: GraduationCap,
     },
-    {
-      id: 2,
-      type: 'certification',
-      title: 'Fullstack & AI Engineering Program',
-      institution: 'Intensive Developer Bootcamp / Certification',
-      period: '2023 - 2024',
-      location: 'Online / Remote',
-      description: 'Program pelatihan intensif pengembangan aplikasi web berbasis React.js (Vite), arsitektur REST API dengan Express.js, manajemen state, serta deployment terintegrasi di Vercel.',
-      highlights: [
-        'Mastery React.js & Tailwind CSS Responsive Design',
-        'Penerapan Clean Architecture & Input Validation di Express.js',
-        'Sistem Kontrol Versi Git & Workflow Agentic AI',
-      ],
-      icon: Award,
-    },
-    {
-      id: 3,
-      type: 'project',
-      title: 'Independent Fullstack & AI Projects',
-      institution: 'Portfolio Dev Hub & Open Source',
-      period: '2024 - Sekarang',
-      location: 'Self-Directed',
-      description: 'Mengembangkan berbagai repositori publik di GitHub untuk mempraktikkan *Senior Engineering Standards*, pola respons standar JSON, dan integrasi model AI Python.',
-      highlights: [
-        'Smart Waste Management System (Vision AI)',
-        'Centralized Express REST API Service',
-        'Portfolio Dev Hub dengan Antigravity & Ruleset Sistem',
-      ],
-      icon: Code2,
-    },
+
   ];
 
   return (
