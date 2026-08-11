@@ -60,13 +60,13 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-accent)] to-blue-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-text-primary)];
   }
   .glass-panel {
-    @apply bg-white/70 dark:bg-slate-800/70 backdrop-blur-md border border-white/20 dark:border-slate-700/50 shadow-sm;
+    @apply bg-[var(--color-surface-card)]/80 backdrop-blur-md border border-[var(--color-surface-border)] shadow-sm;
   }
   .glass-drawer {
-    @apply bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-b border-white/20 dark:border-slate-700/50 shadow-md;
+    @apply bg-[var(--color-bg-base)]/95 backdrop-blur-xl border-b border-[var(--color-surface-border)] shadow-md;
   }
   .touch-target {
     @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
