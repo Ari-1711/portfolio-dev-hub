@@ -1,42 +1,59 @@
-# Portfolio Dev Hub
+# 🚀 Ari Hermawan — Fullstack & AI Developer
 
-Centralized developer portfolio and interactive showcase built with **React.js (Vite)**, **Tailwind CSS**, **Node.js / Express.js REST API**, and **Python (MobileNetV2)** AI model integration.
+[![Live Demo](https://img.shields.io/badge/Live_Website-Available-success?style=for-the-badge&logo=vercel)](https://portfolio-ari-navy.vercel.app/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 
-## 🎨 Visual Identity & Design System
-- **Style Direction:** Opsi 1 — Precision Minimalist (Architectural & Structured)
-- **Palette (from `DESIGN.md`):**
-  - Primary Deep Navy: `#293681`
-  - Royal Accent Blue: `#4274D9`
-  - Soft Ice Cyan: `#95CCDD`
-  - Mint Background Base: `#D0E7E6`
-  - Deep Card Navy (Dark Mode): `#1E2761`
+**Mahasiswa Teknik Informatika Universitas Mercu Buana** yang berfokus pada pengembangan aplikasi web modern (React.js/Node.js) dan integrasi model Kecerdasan Buatan (AI/ML). 
 
-## 🚀 Key Sections & Navigation
-1. **Header / Navbar:** Brand logo, 6 smooth auto-scroll links (*Beranda, Tentang Saya, Portfolio, Pendidikan & Pengalaman, Blog, Kontak*), Theme Mode Toggle, and "Contact Me" CTA.
-2. **Hero Section:** Split 2-column layout with status badge, headline, 2-line bio, CTA buttons, Direct Connect Hub (5 social icons: GitHub, LinkedIn, WA, Mail, IG), and Profile Avatar Frame.
-3. **Tentang Saya:** Focus summary + 4-column Tech Stack Matrix (React.js, Node.js, Express, Tailwind, Python, MobileNetV2, Git, Vercel).
-4. **Portfolio Showcase:** Featured AI Project Card (*Smart Waste Management System*) with problem vs. solution breakdown, tech tags, Live Demo link, and GitHub repo access.
-5. **Pendidikan & Pengalaman:** Interactive Vertical Timeline featuring Informatics Engineering at Mercu Buana University and Fullstack & AI Engineering programs.
-6. **Blog & Engineering Notes:** 3-column grid of technical articles.
-7. **Contact & Footer:** Interactive contact form connected to Express REST API backend `/api/contact` with explicit UI states (`loading`, `error`, `success`), plus Direct Connect Hub.
+> **🌐 Live Portfolio:** [https://portfolio-ari-navy.vercel.app/](https://portfolio-ari-navy.vercel.app/)
 
-## 🛠️ How to Run Locally
+---
 
-### 1. Frontend Development Server
+## 🎯 Objektif Profesional
+Repositori ini berisi *source code* untuk portofolio interaktif dan terpusat (*Centralized Developer Portfolio*) yang mendemonstrasikan kapabilitas teknis saya secara *end-to-end*. Saat ini saya secara aktif mencari **Kesempatan Magang (Internship) di bidang Fullstack Development / AI Engineering** untuk berkontribusi langsung pada solusi industri nyata.
+
+## 🛠️ Tech Stack & Ekosistem
+Sistem portofolio ini merepresentasikan standar arsitektur perangkat lunak yang saya terapkan pada lingkungan produksi:
+- **Frontend Core:** React.js (Vite), JavaScript ES6+
+- **Styling & UI:** Tailwind CSS, Clean Soft Minimalist System (Native Dark/Light Mode)
+- **Backend Architecture:** Node.js, Express.js (RESTful API), Clean Architecture
+- **Artificial Intelligence:** Python, TensorFlow/Keras, Computer Vision (MobileNetV2)
+- **Deployment & Ops:** Vercel (Frontend & Serverless API), Git Version Control
+
+## 🚀 Fitur Utama Sistem
+1. **Interactive UI/UX & Responsive Design:**
+   Pendekatan *Mobile-First* dengan implementasi UI *glassmorphism*, animasi transisi dinamis, dan deteksi preferensi sistem warna otomatis menggunakan *CSS Variables*.
+2. **AI Computer Vision Showcase:**
+   Integrasi hasil riset model AI ringan (*MobileNetV2*) yang mampu membedakan jenis sampah organik dan anorganik dengan akurasi 93,88% — siap diintegrasikan pada perangkat IoT untuk mendukung ekosistem *Smart City*.
+3. **Modal-Based Engineering Blog:**
+   Modul blog internal untuk menyajikan catatan teknis (mengenai Data Science, kurva Pareto, dan arsitektur AI) secara mulus tanpa pemuatan ulang (*reload*) halaman.
+4. **Secure REST API Backend:**
+   Sistem manajemen pesan (Contact Form) yang terhubung ke *backend* Express.js dengan validasi input ketat dan pengembalian (*response*) standar JSON yang aman.
+
+## 💻 Panduan Menjalankan Secara Lokal (Local Run)
+Jika Anda adalah *reviewer* atau *engineer* yang ingin melihat struktur *source code*:
+
+### 1. Menjalankan Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+*Frontend akan dapat diakses di `http://localhost:5173`*
 
-### 2. Backend REST API Server
+### 2. Menjalankan Backend API
 ```bash
 cd backend
 npm install
 npm run dev
 ```
 
-## 📄 Documentation Artifacts
-- [PRODUCT.md](file:///d:/portfolio-dev-hub/PRODUCT.md) — Durable product goals & context
-- [DESIGN.md](file:///d:/portfolio-dev-hub/DESIGN.md) — Visual design tokens, typography, and anti-pattern rules
-- [.agents/rules/](file:///d:/portfolio-dev-hub/.agents/rules/) — Workspace AI agent rulesets (`caveman.md`, `ponytail.md`, `clean-code.md`, `aposd.md`, `tech-stack.md`)
+## 📬 Terhubung Bersama Saya
+Saya sangat antusias untuk berdiskusi terkait teknologi, kolaborasi sistem, maupun peluang magang di perusahaan Anda. 
+- **Lihat Portofolio Lengkap:** [portfolio-ari-navy.vercel.app](https://portfolio-ari-navy.vercel.app/)
+- **GitHub Repositori Utama:** [github.com/Ari-1711](https://github.com/Ari-1711)
+
+---
+*Di-desain dan dikembangkan dengan standar kode yang terstruktur (Clean Code), modular, dan scalable.*
