@@ -18,9 +18,8 @@ Repositori ini berisi *source code* untuk portofolio interaktif dan terpusat (*C
 Sistem portofolio ini merepresentasikan standar arsitektur perangkat lunak yang saya terapkan pada lingkungan produksi:
 - **Frontend Core:** React.js (Vite), JavaScript ES6+
 - **Styling & UI:** Tailwind CSS, Clean Soft Minimalist System (Native Dark/Light Mode)
-- **Backend Architecture:** Node.js, Express.js (RESTful API), Clean Architecture
 - **Artificial Intelligence:** Python, TensorFlow/Keras, Computer Vision (MobileNetV2)
-- **Deployment & Ops:** Vercel (Frontend & Serverless API), Git Version Control
+- **Deployment & Ops:** Vercel, Git Version Control
 
 ## 🚀 Fitur Utama Sistem
 1. **Interactive UI/UX & Responsive Design:**
@@ -29,8 +28,7 @@ Sistem portofolio ini merepresentasikan standar arsitektur perangkat lunak yang 
    Integrasi hasil riset model AI ringan (*MobileNetV2*) yang mampu membedakan jenis sampah organik dan anorganik dengan akurasi 93,88% — siap diintegrasikan pada perangkat IoT untuk mendukung ekosistem *Smart City*.
 3. **Modal-Based Engineering Blog:**
    Modul blog internal untuk menyajikan catatan teknis (mengenai Data Science, kurva Pareto, dan arsitektur AI) secara mulus tanpa pemuatan ulang (*reload*) halaman.
-4. **Secure REST API Backend:**
-   Sistem manajemen pesan (Contact Form) yang terhubung ke *backend* Express.js dengan validasi input ketat dan pengembalian (*response*) standar JSON yang aman.
+
 
 ## 💻 Panduan Menjalankan Secara Lokal (Local Run)
 Jika Anda adalah *reviewer* atau *engineer* yang ingin melihat struktur *source code*:
@@ -43,12 +41,7 @@ npm run dev
 ```
 *Frontend akan dapat diakses di `http://localhost:5173`*
 
-### 2. Menjalankan Backend API
-```bash
-cd backend
-npm install
-npm run dev
-```
+
 
 ## 📬 Terhubung Bersama Saya
 Saya sangat antusias untuk berdiskusi terkait teknologi, kolaborasi sistem, maupun peluang magang di perusahaan Anda. 
