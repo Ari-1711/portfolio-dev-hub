@@ -24,18 +24,22 @@
 ### 2.1 Primitive Tokens (Raw Values)
 ```css
 :root {
-  /* Light Mode Primitives */
-  --primitive-ice-blue-100: #C4E2F5;  /* Soft Ice Blue Base | rgb(196, 226, 245) */
-  --primitive-blue-500:     #1591DC;  /* Primary Accent/CTA | rgb(21, 145, 220)  */
-  --primitive-blue-400:     #4BB8FA;  /* Secondary Accent   | rgb(75, 184, 250)  */
-  --primitive-blue-800:     #2C5EAD;  /* Primary Text/Header| rgb(44, 94, 173)   */
-  --primitive-white:        #FFFFFF;  /* Card Pure White    | rgb(255, 255, 255) */
+  /* Mono Primitives (Grayscale) */
+  --primitive-white:        #FFFFFF;
+  --primitive-gray-100:     #F7F6F3;
+  --primitive-gray-200:     #EBE8E1;
+  --primitive-gray-300:     #DDD8CD;
+  --primitive-gray-400:     #999999;
+  --primitive-gray-500:     #82827F;
+  --primitive-gray-800:     #404040;
+  --primitive-gray-900:     #333333;
+  --primitive-black-800:    #282828;
+  --primitive-black-900:    #1E1E1E;
+  --primitive-black-1000:   #111111;
 
-  /* Dark Mode Primitives */
-  --primitive-slate-900:    #27374D;  /* Deep Slate Base    | rgb(39, 55, 77)    */
-  --primitive-slate-700:    #526D82;  /* Card Background    | rgb(82, 109, 130)  */
-  --primitive-slate-400:    #9DB2BF;  /* Badges/Borders     | rgb(157, 178, 191) */
-  --primitive-slate-100:    #DDE6ED;  /* Text/Highlights    | rgb(221, 230, 237) */
+  /* Brand Primitives */
+  --primitive-green-500:    #2FA06A;
+  --primitive-orange-500:   #FF6B00;
 }
 ```
 
@@ -44,28 +48,28 @@
 #### Light Mode Theme
 ```css
 [data-theme="light"], :root {
-  --color-bg-base:        #EBE8E1;
-  --color-surface-card:   #F7F6F3;
-  --color-surface-border: #DDD8CD;
-  --color-text-primary:   #111111;
-  --color-text-secondary: #82827F;
-  --color-accent:         #2FA06A;
-  --color-badge-bg:       #FFFFFF;
-  --color-badge-text:     #2FA06A;
+  --color-bg-base:        var(--primitive-gray-200);   /* #EBE8E1 */
+  --color-surface-card:   var(--primitive-gray-100);   /* #F7F6F3 */
+  --color-surface-border: var(--primitive-gray-300);   /* #DDD8CD */
+  --color-text-primary:   var(--primitive-black-1000); /* #111111 */
+  --color-text-secondary: var(--primitive-gray-500);   /* #82827F */
+  --color-accent:         var(--primitive-green-500);  /* #2FA06A */
+  --color-badge-bg:       var(--primitive-white);      /* #FFFFFF */
+  --color-badge-text:     var(--primitive-green-500);  /* #2FA06A */
 }
 ```
 
 #### Dark Mode Theme
 ```css
 [data-theme="dark"] {
-  --color-bg-base:        #1E1E1E;
-  --color-surface-card:   #282828;
-  --color-surface-border: #333333;
-  --color-text-primary:   #FFFFFF;
-  --color-text-secondary: #999999;
-  --color-accent:         #FF6B00;
-  --color-badge-bg:       #2FA06A;
-  --color-badge-text:     #404040;
+  --color-bg-base:        var(--primitive-black-900);  /* #1E1E1E */
+  --color-surface-card:   var(--primitive-black-800);  /* #282828 */
+  --color-surface-border: var(--primitive-gray-900);   /* #333333 */
+  --color-text-primary:   var(--primitive-white);      /* #FFFFFF */
+  --color-text-secondary: var(--primitive-gray-400);   /* #999999 */
+  --color-accent:         var(--primitive-orange-500); /* #FF6B00 */
+  --color-badge-bg:       var(--primitive-green-500);  /* #2FA06A */
+  --color-badge-text:     var(--primitive-gray-800);   /* #404040 */
 }
 ```
 
@@ -73,9 +77,9 @@
 
 ## 3. Accessibility & Contrast Verification (WCAG Standards)
 
-- **Light Mode Text Contrast:** Primary Text `#2C5EAD` on White `#FFFFFF` surface yields **~6.4:1 contrast ratio**, exceeding WCAG AA & AAA standards.
-- **Dark Mode Text Contrast:** Primary Text `#DDE6ED` on Deep Slate Base `#27374D` & Card `#526D82` yields **~7.2:1 contrast ratio**, providing crisp readability.
-- **Button / CTA Affordance:** Primary Accent `#1591DC` with White text provides clear visual hierarchy.
+- **Light Mode Text Contrast:** Primary Text `#111111` on `#F7F6F3` surface yields high contrast, providing excellent legibility.
+- **Dark Mode Text Contrast:** Primary Text `#FFFFFF` on Base `#1E1E1E` & Card `#282828` yields high contrast ratio, providing crisp readability.
+- **Button / CTA Affordance:** Primary Accent `#2FA06A` (and `#FF6B00` in Dark Mode) provides clear visual hierarchy and distinct semantic weight.
 
 ---
 
