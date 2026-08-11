@@ -6,25 +6,44 @@
 
 @layer base {
   :root {
-    --color-bg-base: #EBE8E1;
-    --color-surface-card: #F7F6F3;
-    --color-surface-border: #DDD8CD;
-    --color-text-primary: #111111;
-    --color-text-secondary: #82827F;
-    --color-accent: #2FA06A;
-    --color-badge-bg: #FFFFFF;
-    --color-badge-text: #2FA06A;
+    /* Mono Primitives (Grayscale) */
+    --primitive-white:        #FFFFFF;
+    --primitive-gray-100:     #F7F6F3;
+    --primitive-gray-200:     #EBE8E1;
+    --primitive-gray-300:     #DDD8CD;
+    --primitive-gray-400:     #999999;
+    --primitive-gray-500:     #82827F;
+    --primitive-gray-800:     #404040;
+    --primitive-gray-900:     #333333;
+    --primitive-black-800:    #282828;
+    --primitive-black-900:    #1E1E1E;
+    --primitive-black-1000:   #111111;
+
+    /* Brand Primitives */
+    --primitive-green-500:    #2FA06A;
+    --primitive-orange-500:   #FF6B00;
+
+    /* Semantic Tokens: Light Mode */
+    --color-bg-base:        var(--primitive-gray-200);
+    --color-surface-card:   var(--primitive-gray-100);
+    --color-surface-border: var(--primitive-gray-300);
+    --color-text-primary:   var(--primitive-black-1000);
+    --color-text-secondary: var(--primitive-gray-500);
+    --color-accent:         var(--primitive-green-500);
+    --color-badge-bg:       var(--primitive-white);
+    --color-badge-text:     var(--primitive-green-500);
   }
 
   .dark {
-    --color-bg-base: #1E1E1E;
-    --color-surface-card: #282828;
-    --color-surface-border: #333333;
-    --color-text-primary: #FFFFFF;
-    --color-text-secondary: #999999;
-    --color-accent: #FF6B00;
-    --color-badge-bg: #2FA06A;
-    --color-badge-text: #404040;
+    /* Semantic Tokens: Dark Mode */
+    --color-bg-base:        var(--primitive-black-900);
+    --color-surface-card:   var(--primitive-black-800);
+    --color-surface-border: var(--primitive-gray-900);
+    --color-text-primary:   var(--primitive-white);
+    --color-text-secondary: var(--primitive-gray-400);
+    --color-accent:         var(--primitive-orange-500);
+    --color-badge-bg:       var(--primitive-green-500);
+    --color-badge-text:     var(--primitive-gray-800);
   }
 
   html {
