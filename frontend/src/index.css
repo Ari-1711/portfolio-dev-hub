@@ -6,25 +6,25 @@
 
 @layer base {
   :root {
-    --color-bg-base: #C4E2F5;        /* Soft Ice Blue Base */
-    --color-surface-card: #FFFFFF;    /* Pure White Card Background */
-    --color-surface-border: #4BB8FA;  /* Secondary Accent / Border Light */
-    --color-text-primary: #2C5EAD;    /* Primary Text / Header Light */
-    --color-text-secondary: #1F4580;  /* Deep Muted Blue Text */
-    --color-accent: #1591DC;          /* Primary Accent / CTA */
-    --color-badge-bg: #4BB8FA;        /* Secondary Accent / Badges Light */
-    --color-badge-text: #FFFFFF;      /* Badge Text Light */
+    --color-bg-base: #EBE8E1;
+    --color-surface-card: #F7F6F3;
+    --color-surface-border: #DDD8CD;
+    --color-text-primary: #111111;
+    --color-text-secondary: #82827F;
+    --color-accent: #2FA06A;
+    --color-badge-bg: #FFFFFF;
+    --color-badge-text: #2FA06A;
   }
 
   .dark {
-    --color-bg-base: #0F172A;        /* Slate 950 */
-    --color-surface-card: #1E293B;    /* Slate 800 */
-    --color-surface-border: #334155;  /* Slate 700 */
-    --color-text-primary: #F8FAFC;    /* Slate 50 */
-    --color-text-secondary: #94A3B8;  /* Slate 400 */
-    --color-accent: #3B82F6;          /* Blue 500 */
-    --color-badge-bg: rgba(59, 130, 246, 0.2); /* Translucent Blue */
-    --color-badge-text: #93C5FD;      /* Blue 300 */
+    --color-bg-base: #1E1E1E;
+    --color-surface-card: #282828;
+    --color-surface-border: #333333;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #999999;
+    --color-accent: #FF6B00;
+    --color-badge-bg: #2FA06A;
+    --color-badge-text: #404040;
   }
 
   html {
