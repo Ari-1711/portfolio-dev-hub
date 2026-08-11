@@ -30,17 +30,17 @@ export default function Hero() {
             {/* Status Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--color-accent)]/30 bg-[var(--color-badge-bg)] text-[var(--color-badge-text)] text-xs font-mono font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>Available for Hire</span>
+              <span>Seeking Fullstack / AI Internship</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[var(--color-text-primary)] leading-[1.2] sm:leading-[1.1] text-pretty">
-              Hai saya Ari Hermawan <span className="text-gradient block mt-2 sm:mt-0 sm:inline">Mahasiswa TI</span>
+              Hai saya <span className="text-gradient block mt-2 sm:mt-0 sm:inline"> Ari Hermawan</span>
             </h1>
 
             {/* 2-Line Bio */}
             <p className="text-base sm:text-lg text-[var(--color-text-secondary)] leading-relaxed max-w-2xl">
-              Membangun aplikasi web *production-grade* berarsitektur bersih (React &amp; Express) dipadukan dengan model AI terintegrasi (Python &amp; MobileNetV2). Mahasiswa Teknik Informatika Universitas Mercu Buana.
+              Mahasiswa Teknik Informatika Mercu Buana yang siap berkontribusi dalam pengembangan aplikasi web modern (React/Node.js) dan integrasi solusi AI/ML berbasis Python.
             </p>
 
             {/* CTA Buttons */}

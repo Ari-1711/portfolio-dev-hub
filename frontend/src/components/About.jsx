@@ -62,7 +62,7 @@ export default function About() {
             Tentang Saya &amp; <span className="text-[var(--color-accent)]">Tech Stack Matrix</span>
           </h2>
           <p className="mt-4 text-base text-[var(--color-text-secondary)] leading-relaxed">
-            Saya adalah Mahasiswa Teknik Informatika di Universitas Mercu Buana dengan spesialisasi pengembangan web *full-stack* dan integrasi model AI/ML. Berfokus pada kode modular, *clean architecture*, dan pengalaman pengguna yang responsif.
+            Berfokus pada pengembangan aplikasi web yang scalable, terstruktur, dan mudah dipelihara. Mengombinasikan antarmuka yang responsif dengan arsitektur backend yang aman serta integrasi model Machine Learning yang efisien.
           </p>
         </div>
 
