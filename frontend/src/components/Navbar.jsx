@@ -2,23 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Sun, Moon, Menu, X, ArrowRight } from 'lucide-react';
 
 export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    return true;
+  });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
 
   useEffect(() => {
-    // Default to dark mode as per DESIGN.md
-    document.documentElement.classList.add('dark');
-  }, []);
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
-    if (darkMode) {
-      document.documentElement.classList.remove('dark');
-      setDarkMode(false);
-    } else {
-      document.documentElement.classList.add('dark');
-      setDarkMode(true);
-    }
+    setDarkMode(!darkMode);
   };
 
   const navItems = [
