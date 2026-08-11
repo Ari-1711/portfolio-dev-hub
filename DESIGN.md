@@ -44,28 +44,28 @@
 #### Light Mode Theme
 ```css
 [data-theme="light"], :root {
-  --color-bg-base:        var(--primitive-ice-blue-100); /* #C4E2F5 */
-  --color-surface-card:   var(--primitive-white);        /* #FFFFFF */
-  --color-surface-border: var(--primitive-blue-400);     /* #4BB8FA */
-  --color-text-primary:   var(--primitive-blue-800);     /* #2C5EAD */
-  --color-text-secondary: #1F4580;                       /* Deep Muted Blue */
-  --color-accent:         var(--primitive-blue-500);     /* #1591DC (Primary CTA) */
-  --color-badge-bg:       var(--primitive-blue-400);     /* #4BB8FA */
-  --color-badge-text:     var(--primitive-white);        /* #FFFFFF */
+  --color-bg-base:        #EBE8E1;
+  --color-surface-card:   #F7F6F3;
+  --color-surface-border: #DDD8CD;
+  --color-text-primary:   #111111;
+  --color-text-secondary: #82827F;
+  --color-accent:         #2FA06A;
+  --color-badge-bg:       #FFFFFF;
+  --color-badge-text:     #2FA06A;
 }
 ```
 
-#### Dark Mode Theme (STRICT BAN ON PURE BLACK `#000000`)
+#### Dark Mode Theme
 ```css
 [data-theme="dark"] {
-  --color-bg-base:        var(--primitive-slate-900);    /* #27374D (Deep Slate) */
-  --color-surface-card:   var(--primitive-slate-700);    /* #526D82 (Card Surface) */
-  --color-surface-border: var(--primitive-slate-400);    /* #9DB2BF (Border) */
-  --color-text-primary:   var(--primitive-slate-100);    /* #DDE6ED (Primary Text) */
-  --color-text-secondary: var(--primitive-slate-400);    /* #9DB2BF (Muted Subtitles) */
-  --color-accent:         var(--primitive-blue-500);     /* #1591DC (Accent CTA) */
-  --color-badge-bg:       rgba(157, 178, 191, 0.25);     /* Translucent Slate */
-  --color-badge-text:     var(--primitive-slate-100);    /* #DDE6ED */
+  --color-bg-base:        #1E1E1E;
+  --color-surface-card:   #282828;
+  --color-surface-border: #333333;
+  --color-text-primary:   #FFFFFF;
+  --color-text-secondary: #999999;
+  --color-accent:         #FF6B00;
+  --color-badge-bg:       #2FA06A;
+  --color-badge-text:     #404040;
 }
 ```
 
@@ -106,7 +106,6 @@
 ## 5. Strict Anti-Pattern Rules (Quality Floor)
 
 1. **NO CODE DECORATIONS IN BRANDING:** Dilarang menggunakan kode dekoratif seperti HTML tags (`<Ari.dev />`), JSON extensions (`.json`), atau version tags (`v1.0.0`) pada UI/Branding Header maupun Card titles.
-2. **STRICT BAN ON PURE BLACK (`#000000`):** Dark mode background MUST use Deep Slate Charcoal (`#27374D`) and card surfaces MUST use `#526D82`. Pure black background is prohibited.
-3. **NO EXCESSIVE CARD NESTING:** Maximum 1 level of card container. Do not place cards inside other cards ("Card-in-Card" clutter).
-4. **NO GENERIC GRAY-SCALE TEXT:** All primary and secondary text MUST derive from the specified palette (`#2C5EAD` in Light Mode, `#DDE6ED` and `#9DB2BF` in Dark Mode).
-5. **NO UNHANDLED API STATES:** Every component consuming backend endpoints MUST explicitly handle and render `loading`, `error`, and `success` UI states.
+2. **NO EXCESSIVE CARD NESTING:** Maximum 1 level of card container. Do not place cards inside other cards ("Card-in-Card" clutter).
+3. **NO GENERIC GRAY-SCALE TEXT:** All primary and secondary text MUST derive from the specified palette.
+4. **NO UNHANDLED API STATES:** Every component consuming backend endpoints MUST explicitly handle and render `loading`, `error`, and `success` UI states.
