@@ -15,14 +15,15 @@ export default function About() {
       ],
     },
     {
-      title: 'Backend & REST API',
+      title: 'Backend & Database',
       icon: Server,
       description: 'Merancang endpoint RESTful bersih dan arsitektur aman.',
       skills: [
         { name: 'Node.js', tag: 'Runtime' },
         { name: 'Express.js', tag: 'Framework' },
         { name: 'RESTful API', tag: 'Architecture' },
-        { name: 'JSON Protocol', tag: 'Standard' },
+        { name: 'MySQL', tag: 'Relational' },
+        { name: 'Firebase', tag: 'NoSQL' },
       ],
     },
     {
@@ -34,6 +35,7 @@ export default function About() {
         { name: 'MobileNetV2', tag: 'CNN Model' },
         { name: 'TensorFlow/Keras', tag: 'Framework' },
         { name: 'OpenCV', tag: 'Vision' },
+        { name: 'Streamlit', tag: 'Web App' },
       ],
     },
     {
@@ -43,8 +45,7 @@ export default function About() {
       skills: [
         { name: 'Git & GitHub', tag: 'Version Control' },
         { name: 'Vercel', tag: 'Deployment' },
-        { name: 'Postman', tag: 'API Testing' },
-        { name: 'ESLint', tag: 'Code Quality' },
+        { name: 'Streamlit Community Cloud', tag: 'Cloud Hosting' },
       ],
     },
   ];
@@ -62,7 +63,7 @@ export default function About() {
             Tentang Saya &amp; <span className="text-[var(--color-accent)]">Tech Stack Matrix</span>
           </h2>
           <p className="mt-4 text-base text-[var(--color-text-secondary)] leading-relaxed">
-            Berfokus pada pengembangan aplikasi web yang scalable, terstruktur, dan mudah dipelihara. Mengombinasikan antarmuka yang responsif dengan arsitektur backend yang aman serta integrasi model Machine Learning yang efisien.
+            Berfokus pada pengembangan aplikasi web end-to-end yang scalable, terstruktur, dan mudah dipelihara. Mengombinasikan antarmuka yang responsif dengan arsitektur backend yang aman, pengelolaan database (Relational & NoSQL), serta deployment model Machine Learning yang efisien.
           </p>
         </div>
 
