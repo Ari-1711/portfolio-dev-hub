@@ -7,7 +7,7 @@ export default function Hero() {
   const socialLinks = [
     { name: 'GitHub', icon: GithubIcon, url: 'https://github.com/Ari-1711', label: 'github.com/Ari-1711' },
     { name: 'LinkedIn', icon: LinkedinIcon, url: 'https://www.linkedin.com/in/ari-hermawan-783370315/', label: 'Ari Hermawan' },
-    { name: 'WhatsApp Direct', icon: WhatsappIcon, url: 'https://wa.me/6281221634924', label: '+62 812-2163-4924' },
+    { name: 'WhatsApp Direct', icon: WhatsappIcon, url: 'https://wa.me/6282112634924', label: '+62 821-1263-4924' },
     { name: 'Email', icon: Mail, url: 'mailto:arihermawan006@gmail.com', label: 'arihermawan006@gmail.com' },
     { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/arihermawan_431/', label: '@arihermawan_431' },
   ];
