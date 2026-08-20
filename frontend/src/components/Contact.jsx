@@ -53,8 +53,8 @@ export default function Contact() {
   const directContacts = [
     {
       name: 'WhatsApp Direct',
-      value: '+62 812-2163-4924',
-      url: 'https://wa.me/6281221634924',
+      value: '+62 821-1263-4924',
+      url: 'https://wa.me/6282112634924',
       icon: WhatsappIcon,
     },
     {
