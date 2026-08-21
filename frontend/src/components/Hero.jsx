@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, ArrowUpRight, User } from 'lucide-react';
+import { Mail, ArrowUpRight, User, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, InstagramIcon, WhatsappIcon } from './Icons';
 import profileImg from '../assets/profile.jpg';
 
@@ -23,10 +23,10 @@ export default function Hero() {
     <section id="hero" className="pt-28 pb-16 md:pt-36 md:pb-24 border-b border-[var(--color-surface-border)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Column: Headline, Bio, CTAs, Social Icons */}
           <div className="lg:col-span-7 space-y-6">
-            
+
             {/* Status Pill Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[var(--color-accent)]/30 bg-[var(--color-badge-bg)] text-[var(--color-badge-text)] text-xs font-mono font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -52,6 +52,16 @@ export default function Hero() {
                 <span>View Projects</span>
                 <ArrowUpRight size={16} />
               </button>
+
+              <a
+                href="https://drive.google.com/file/d/181m4VkKGvbaiHbfwHPT_OtUAGg82nj2J/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-xl border-2 border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all hover:-translate-y-1"
+              >
+                <span>View CV</span>
+                <FileText size={16} />
+              </a>
 
               <button
                 onClick={() => scrollToSection('contact')}
@@ -90,17 +100,17 @@ export default function Hero() {
           {/* Right Column: Profile Avatar Frame & Status Badge */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md">
-              
+
               {/* Outer Decorative Border Card */}
               <div className="glass-panel p-6 sm:p-8 rounded-3xl space-y-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
-                
+
                 {/* Header Badge */}
                 <div className="flex items-center justify-between border-b border-[var(--color-surface-border)] pb-4">
                   <div className="flex items-center gap-2">
                     <User size={18} className="text-[var(--color-accent)]" />
                     <span className="font-sans text-xs font-bold text-[var(--color-text-primary)]">Ari Hermawan</span>
                   </div>
-                 
+
                 </div>
 
                 {/* Avatar Placeholder / Photo Frame */}
