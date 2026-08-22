@@ -54,7 +54,7 @@ export default function Hero() {
               </button>
 
               <a
-                href="https://drive.google.com/file/d/181m4VkKGvbaiHbfwHPT_OtUAGg82nj2J/view?usp=sharing"
+                href="https://drive.google.com/file/d/1qr-FyOUWgvgL--5x88z9qoqFppab0XIb/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold rounded-xl border-2 border-[var(--color-surface-border)] text-[var(--color-text-primary)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all hover:-translate-y-1"
