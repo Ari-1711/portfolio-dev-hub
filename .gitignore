@@ -7,7 +7,7 @@ build/
 .DESIGN.md
 .PRODUCT.md
 .SESSION_LOG.md
-.gitignore
+
 .agent/
 .graphify-out/
 .codex/
