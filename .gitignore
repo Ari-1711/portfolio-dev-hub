@@ -4,6 +4,14 @@ node_modules/
 .venv/
 dist/
 build/
+.DESIGN.md
+.PRODUCT.md
+.SESSION_LOG.md
+.gitignore
+.agent/
+.graphify-out/
+.codex/
+.impeccable/
 
 # Exception for agents and graphify
 !.agents/
