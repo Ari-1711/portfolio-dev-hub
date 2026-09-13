@@ -4,8 +4,3 @@ node_modules/
 .venv/
 dist/
 build/
-
-# Exception for agents and graphify
-!.agents/
-!graphify-out/
-

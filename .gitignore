@@ -1,19 +1,26 @@
+# Dependencies & Environments
 node_modules/
 .env
 .env.local
 .venv/
 dist/
 build/
+
+# Project & AI Documentation (Local Only)
+DESIGN.md
+PRODUCT.md
+SESSION_LOG.md
 .DESIGN.md
 .PRODUCT.md
 .SESSION_LOG.md
 
+# AI & Agent Tooling / Metadata
+.agents/
 .agent/
-.graphify-out/
 .codex/
 .impeccable/
-
-# Exception for agents and graphify
-!.agents/
-!graphify-out/
-graphify-out/cache/
+.gemini/
+.claude/
+graphify-out/
+.graphify-out/
+.obsidian/
